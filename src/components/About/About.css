@@ -1,0 +1,61 @@
+.about {
+    margin: 100px auto; /* Center the about section with margin */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically to the center */
+    justify-content: space-between; /* Distribute space between elements */
+    width: 90%; /* Set the width to 90% of the container */
+}
+
+.about-left {
+    flex-basis: 40%; /* Left section takes up 40% of the width */
+    position: relative; /* Position relative for absolute positioning of play icon */
+}
+
+.about-right {
+    flex-basis: 56%; /* Right section takes up 56% of the width */
+}
+
+.about-img {
+    width: 100%; /* Image takes up 100% width of the container */
+    border-radius: 10px; /* Add rounded corners to the image */
+}
+
+.play-icon {
+    width: 60px; /* Set the play icon width */
+    position: absolute; /* Position absolute to place it over the image */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position to center the icon */
+}
+
+.about h3 {
+    font-weight: 600; /* Set the font weight */
+    font-size: 16px; /* Set the font size */
+    color: #191c37; /* Set the text color */
+}
+
+.about h2 {
+    font-size: 35px; /* Set the font size */
+    color: #000F38; /* Set the text color */
+    margin: 10px 0; /* Add top and bottom margin */
+    max-width: 400px; /* Set the maximum width */
+}
+
+.about p {
+    color: #676767; /* Set the text color */
+    margin-bottom: 15px; /* Add bottom margin */
+}
+
+/* Media Query for screens with a maximum width of 800px */
+@media (max-width: 800px) {
+    .about {
+        flex-direction: column; /* Stack the sections vertically */
+    }
+    .about-left {
+        flex-basis: 100%; /* Left section takes up 100% of the width */
+        margin: 20px; /* Add margin */
+    }
+    .about-right {
+        flex-basis: 100%; /* Right section takes up 100% of the width */
+    }
+}

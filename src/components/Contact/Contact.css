@@ -1,0 +1,81 @@
+.contact {
+    margin: 80px auto; /* Center the contact section with margin */
+    max-width: 90%; /* Set the maximum width to 90% of the container */
+    display: flex; /* Use flexbox for layout */
+    align-content: center; /* Align items vertically to the center */
+    justify-content: space-between; /* Distribute space between elements */
+}
+
+.contact-col {
+    flex-basis: 48%; /* Each column takes up 48% of the width */
+    color: #676767; /* Set the text color */
+}
+
+.contact-col h3 {
+    color: #000F38; /* Set the heading color */
+    font-weight: 500; /* Set the font weight */
+    font-size: 25px; /* Set the font size */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center align items vertically */
+    margin-bottom: 20px; /* Add bottom margin */
+}
+
+.contact-col h3 img {
+    width: 35px; /* Set the image width */
+    margin-left: 10px; /* Add left margin */
+}
+
+.contact-col p {
+    max-width: 450px; /* Set the maximum width of the paragraph */
+    list-style: 0.3; /* This is incorrect, list-style is not applicable to <p> */
+}
+
+.contact-col ul li {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center align items vertically */
+    margin: 20px 0; /* Add top and bottom margin */
+}
+
+.contact-col ul li img {
+    width: 25px; /* Set the image width */
+    margin-right: 10px; /* Add right margin */
+}
+
+.contact form input,
+.contact form textarea {
+    display: block; /* Display as block element */
+    width: 100%; /* Set width to 100% */
+    background: #c5c5de; /* Set background color */
+    padding: 15px; /* Add padding */
+    border: 0; /* Remove border */
+    outline: 0; /* Remove outline */
+    margin-bottom: 15px; /* Add bottom margin */
+    margin-top: 5px; /* Add top margin */
+    resize: none; /* Disable resizing for textarea */
+}
+
+.contact-col span {
+    display: block; /* Display as block element */
+    margin-top: 20px 0; /* This is incorrect, margin-top takes only one value */
+}
+
+.contact form .btn.dark-btn {
+    background-color: rgb(20, 20, 39); /* Set button background color */
+    color: white; /* Set button text color */
+}
+
+/* This rule is redundant and can be removed as it overrides the previous rule */
+.contact form .btn.dark-btn {
+    background-color: rgb(26, 26, 62); /* Set button background color */
+    color: white; /* Set button text color */
+}
+
+/* Media Query for screens with a maximum width of 700px */
+@media (max-width: 700px) {
+    .contact {
+        display: block; /* Display contact section as block element */
+    }
+    .contact-col {
+        padding: 20px; /* Add padding to the columns */
+    }
+}

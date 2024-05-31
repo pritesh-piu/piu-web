@@ -1,0 +1,90 @@
+nav {
+    width: 100%;
+    /* Updated to give a transparent background */
+    /* background: rgba(51, 94, 181, 0.8); */
+    color: #fff;
+    padding: 4px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    /* Optional: Adds a blur effect for better readability */
+    backdrop-filter: blur(200px); 
+}
+
+.logo {
+    width: 200px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 5px 20px;
+    font-size: 16px;
+}
+
+nav ul li .btn {
+    /* Example button background color */
+    background-color: #fff; 
+    /* Example button text color */
+    color: #333; 
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav ul li .btn:hover {
+    /* Example button hover background color */
+    background-color: #ccc; 
+}
+
+.dark-nav {
+    background: #141130;
+    transition: 0.5s;
+}
+
+.menu_icon {
+    display: none;
+}
+
+/*--------------Media Query-----------------*/
+@media (max-width: 1000px) {
+    .logo {
+        width: 140px;
+    }
+    nav ul li {
+        margin: 10px 15px;
+    }
+}
+
+@media (max-width: 840px) {
+    nav {
+        padding: 15px 0;
+    }
+    nav ul {
+        position: fixed;
+        top: 0;
+        right: 0px;
+        background: #212EA0;
+        z-index: -1;
+        width: 200px;
+        padding-top: 70px;
+        transition: 0.5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 25px 40px;
+    }
+    .menu_icon {
+        display: block;
+        width: 30px;
+        cursor: pointer;
+    }
+    .hide-mobile-menu {
+        right: -200px;
+    }
+}
