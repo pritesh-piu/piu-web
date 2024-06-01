@@ -1,7 +1,7 @@
 {
   "name": "piu",
   "private": true,
-  "homepage": "http://pritesh-piu.github.io/piu-web",
+  "homepage": "https://github.com/pritesh-piu/piu-web.git",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
