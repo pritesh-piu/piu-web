@@ -81,6 +81,12 @@ const Programs = () => {
         <div className="caption">
           <img src={program_icon_2} alt="Embedded Systems Icon" />
           <h3>Embedded Systems Design</h3>
+          <ul>
+            <li> IoT (Internet of Things) Development </li>
+            <li>PCB (Printed Circuit Board) Design</li>
+            <li>Firmware Development</li>
+            <li>Embedded Software Testing and Validation</li>
+          </ul>
         </div>
       </div>
 
@@ -90,6 +96,12 @@ const Programs = () => {
         <div className="caption">
           <img src={program_icon_3} alt="Event Management Icon" />
           <h3>Event Management Services</h3>
+          <ul>
+            <li>Event Planning and Coordination </li>
+            <li>Venue Decoration and Setup </li>
+            <li>Entertainment and Activities</li>
+        
+          </ul>
         </div>
       </div>
     </div>
